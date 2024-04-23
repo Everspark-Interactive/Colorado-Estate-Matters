@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Vincentia';
+    src: url('VincentiaRegular.eot');
+    src: url('VincentiaRegular.eot?#iefix') format('embedded-opentype'),
+        url('VincentiaRegular.woff2') format('woff2'),
+        url('VincentiaRegular.woff') format('woff'),
+        url('VincentiaRegular.ttf') format('truetype'),
+        url('VincentiaRegular.svg#VincentiaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
