@@ -53,9 +53,28 @@ get_template_part('blog-header');
         <?php wp_pagenavi(); ?>
       </div>
     </div>
-    <div class="default-sidebar">
-        <?php bulk_sidebar(); ?>
+    <div class="default-sidebar faqs">
+      <div id="text-5" class="widget widget_text">
+        <h3 class="widget-title widgettitle">FAQ Categories</h3>
+        <div class="textwidget">
+          <ul>
+            <?php
+            // Retrieve list of FAQ categories dynamically
+            $faq_categories = get_terms(array(
+              'taxonomy' => 'faqs_category',
+              'hide_empty' => false,
+            ));
+
+            if (!empty($faq_categories)) {
+              foreach ($faq_categories as $faq_category) {
+                echo '<li class="cat-item cat-item-' . $faq_category->term_id . '"><a href="' . get_term_link($faq_category) . '">' . $faq_category->name . '</a></li>';
+              }
+            }
+            ?>
+          </ul>
+        </div>
       </div>
+    </div>
   </div>
 </div>
 
