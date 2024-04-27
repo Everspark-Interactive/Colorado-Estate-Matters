@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Faqs
+ * Template Name: FAQs
  */
 
 get_header();
@@ -28,7 +28,7 @@ get_template_part( 'blog-header' );
       ?>
           <div class="blog-post">
           <h2 class="blog-title"><a href="<?php the_permalink();?>" class=""><?php the_title();?></a></h2>
-          <p class="blog-time"><?php the_time('F j, Y'); ?> Posted In <?php the_category(',');?>  <br> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author();?></a> </p>
+         <!-- <p class="blog-time"><?php the_time('F j, Y'); ?> Posted In <?php the_category(',');?>  <br> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author();?></a> </p> -->
           <?php the_excerpt();?>
           <a href="<?php echo get_permalink() ?>" class="read-more">
             read more
