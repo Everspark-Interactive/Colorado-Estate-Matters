@@ -34,7 +34,7 @@
 
 	<body <?php body_class(); ?> >
     <header class="site-header">
-      <div class="header-container">
+      <div class="header-container test-class-for-demo">
         <div class="site-logo">
           <a href="<?php echo site_url() ?>">
             <img src="<?php echo get_field('header_logo','option') ?>">
